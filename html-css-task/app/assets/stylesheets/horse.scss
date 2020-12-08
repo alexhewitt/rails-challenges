@@ -1,0 +1,42 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.horse-body {
+  background-color: #fbfbfb;
+  padding-top: 15px;
+
+  section {
+    max-width: 720px;
+
+    article {
+      @extend .panel-body;
+      @extend .panel;
+      padding:12px;
+      border-radius: 0px;
+      border-style: groove;
+      border-width: 1px;
+      border-color: rgba(255, 255, 255, 0.28);
+      background: linear-gradient(#fff, #f7f7f7);
+    }
+    h4 {
+      margin-top: 0px;
+    }
+
+    p {
+      margin-top: -10px;
+    }
+
+    img {
+      @extend .pull-left;
+      @extend .img-rounded;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    time {
+      @extend .pull-right;
+      color:#bcbab8;
+    }
+  }
+}
